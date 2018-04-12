@@ -1,0 +1,62 @@
+#+TITLE: Exercise 10: Structures
+#+AUTHOR: S Milton Rajendram
+#+EMAIL:  miltonrs@ssn.edu.in
+#+DATE:   2-6 April 2018 (Mon-Thurs)
+
+#+STARTUP: showeverything
+#+LATEX_HEADER: \usepackage{palatino}
+#+LATEX_HEADER: \usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
+#+LATEX_HEADER: \usepackage{setspace}
+#+LATEX: \linespread{1.2}
+#+PROPERTY: header-args :exports code
+#+OPTIONS: toc:nil
+
+#+LATEX: \linespread{1.5}
+
+* Arrays of structures (1)
+1. Represent an employee by a structure, having these members:
+   1. employee code
+   2. name
+   3. designation
+   4. pay: basic pay, hra, da
+2. Employees of a company can be represented by an array of
+   structures. Write a function to populate the employees array.
+3. Write a function to print the salary slip of a given employee.
+4. Drive your functions from =main()= and test them.
+
+* Arrays of structures (2)
+1. Define a structure to represent a student. It should store
+   3 UT marks for a subject and the final internal mark for
+   that subject.
+   #+LATEX: \linespread{1}
+   #+BEGIN_EXAMPLE
+   struct student {
+      int  rollnum;
+      char name[100];
+      int  ut[4];
+   };
+   #+END_EXAMPLE
+   #+LATEX: \linespread{1.5}
+   Write functions to create a student structure and
+   initialzie it. Write a function to print a student
+   struture. 
+2. Read the roll numbers, names and ut marks for 3 unit
+   tests for 10 students from stdin.
+3. Write a function to calculate the final internal mark for
+   each student.
+4. Modify the structure to store the ut marks and internal
+   mark in 5 subjects. Write a function to compute internal
+   marks of students for 5 different subjects.
+
+* Number conversion
+  Convert the given decimal number into binary, octal and
+  hexadecimal numbers using user defined functions.
+
+#+BEGIN_COMMENT
+  Figure [[fig:hanoi5]]. 
+  #+CAPTION: Tower of Hanoi: move tower in two recursive steps
+  #+NAME: fig:hanoi5
+  #+ATTR_LATEX: :width .5\textwidth
+  [[./hanoi5.pdf]]
+
+#+END_COMMENT
